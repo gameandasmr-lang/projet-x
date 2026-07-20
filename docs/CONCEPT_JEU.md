@@ -82,14 +82,38 @@ Rôles distincts par les stats, pas une matrice de contre-types (cohérent avec 
 
 **Méta-progression (orbes)** : au moins une amélioration envisagée — cooldown d'invocation plus bas. Reste du contenu volontairement laissé ouvert ("on verra ça au fur et à mesure") — pas bloquant pour la suite de la descente.
 
+**Score = orbes (décidé le 2026-07-20)** : une seule monnaie, pas deux compteurs séparés — cohérent avec le principe directeur "finir vite > riche" (moins d'UI, moins à expliquer). Risque de farming des niveaux faciles accepté pour la V1, à corriger plus tard si besoin (ex. rendement décroissant sur un niveau déjà nettoyé) — pas bloquant maintenant.
+
+**Fin de niveau — mécanique de sortie (décidé le 2026-07-20)** : atteindre le seuil d'orbes ne termine pas le niveau automatiquement — ça **débloque une sortie**, indiquée visuellement par le jeu, que le joueur doit atteindre. Fenêtre de **10 secondes** pour l'atteindre une fois débloquée. Les vagues d'ennemis s'intensifient pendant cette fenêtre — transforme la fin de niveau en moment de tension/challenge plutôt qu'un arrêt net, et laisse un choix implicite au joueur (foncer vers la sortie vs risquer quelques secondes de plus pour looter un peu d'orbes en plus, sachant que la pression augmente).
+
+**Économie de mana — première passe (décidé le 2026-07-20, à ajuster en playtest)** : coût évolutif selon la puissance de l'invocation, cooldown qui suit le coût (seul autre frein au spam, puisqu'il n'y a pas de plafond d'invocations vivantes).
+
+| | Coût mana | Cooldown |
+|---|---|---|
+| Mana max | 100 | — |
+| Régén passive | 5/sec (0→100 en 20s) | — |
+| Gobelin | 15 | 2s |
+| Démon | 30 | 5s |
+| Colosse | 50 | 10s |
+
+⚠️ Chiffres de départ non validés en jeu réel — flag de playtest obligatoire avant de les considérer figés.
+
+**Nombre de niveaux — 3, confirmé (décidé le 2026-07-20)** : la progression narrative complète (village → centre pavé → pied du château → couloirs → sommet) est conservée mais fusionnée sur 3 niveaux plutôt que 5, pour limiter le contenu à produire (cohérent avec "finir vite > riche") :
+1. **Abords du village** — large, ennemis faibles peu agressifs.
+2. **Centre pavé + pied du château** — espace qui se resserre, ennemis plus nombreux/dangereux, obstacles défensifs.
+3. **Couloirs + sommet du château** — exigu puis large à nouveau, boss final.
+
+La version à 5 niveaux (un par étape narrative) reste une option V2 facile (redécouper les niveaux fusionnés), pas une perte définitive.
+
 ## Ouvert — prochaine étape de la descente (pour la V1)
 
-- Le "score" qui termine un niveau est-il la même monnaie que les orbes de méta-progression, ou deux systèmes séparés ?
-- Design concret des 3-5 niveaux (dimensions, nombre/placement d'ennemis, ce qui change concrètement entre village/centre/château/couloirs/sommet).
-- Chiffres précis de l'économie de mana (régénération, coût par invocation, durée des cooldowns).
+- Design concret des 3 niveaux (dimensions, nombre/placement d'ennemis précis par niveau).
 - Reste de la liste des améliorations permanentes de méta-progression (au-delà du cooldown plus bas déjà cité).
-- Moteur technique (GDevelop pressenti par continuité avec TLR, à confirmer).
 - Nom définitif du jeu.
+
+## Moteur technique — confirmé (2026-07-20)
+
+**GDevelop**, par continuité avec TLR (pipeline pixel art Sorceress déjà en main, voir section "Mécaniques V1 précisées"). Les références techniques GDevelop de TLR (pixel art, tiles/Tiled, PixelLab, calques 2D) restent consultables par renvoi vers `Desktop/The Long Ride/PROJECT/docs/actif/` — jamais dupliquées dans Projet X (voir `CLAUDE.md`, section `<relation-the-long-ride>`).
 
 ## Index (tags)
 #ProjetX #Concept #Brainstorming #Necromancien
