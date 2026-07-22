@@ -55,6 +55,26 @@ Jamais de fix avant d'avoir tracé la cause racine :
 3. **Hypothèse unique** — une seule cause supposée à la fois, testée avec le changement minimal. Si fausse, nouvelle hypothèse — jamais empiler les fixes.
 4. **Correction de la cause racine**, pas du symptôme. Si 3 tentatives échouent sur la même zone → s'arrêter, remettre en question l'approche plutôt que retenter.
 
+## Identifiants d'instructions vérifiés (évite de redeviner)
+
+En écrivant le JSON directement (sans passer par l'éditeur), le nom exact d'une instruction (`type.value`) est parfois différent du nom affiché dans l'UI, et se découvre seulement si le bloc ressort en rouge à l'ouverture. Liste vérifiée en conditions réelles (Projet X, GDevelop 5.6.274) — à compléter au fil des sessions plutôt que redeviner :
+
+| Besoin | `type.value` correct | Piège rencontré |
+|---|---|---|
+| Centrer la caméra sur un objet | `CenterCameraOnObject` | Pas `CenterCamera` |
+| Simuler une touche pour un comportement (ex. TopDown) | `NomDuComportement::SimulateUpKey` / `Down`/`Left`/`RightKey` | Paramètres : `[NomObjet, NomComportement]` |
+| Touche clavier appuyée (condition) | `KeyPressed` | Paramètres `["", "z"]` (2e param en minuscule) |
+| Bouton souris appuyé (condition) | `MouseButtonPressed` | Paramètres `["", "Left"]` |
+| Créer un objet à une position | `Create` | Paramètres `["", "NomObjet", "ExpressionX", "ExpressionY", ""]` |
+| Comparer une variable globale (condition) | `VarGlobal` | Paramètres `[nom, signe, valeur]` — signe **entre** nom et valeur |
+| Modifier une variable globale (action) | `ModVarGlobal` | Paramètres `[nom, opérateur ("+","-","="), valeur]` |
+| Changer le texte d'un objet Texte | `TextObject::String` | Pas `TextObject::SetString`. Paramètres `[NomObjet, "=", expression string]` |
+| Distance entre deux objets (condition) | `Distance` | **Sens fixe "est en dessous de X pixels"** — pas de paramètre de signe, un 4e paramètre existe mais ne change rien à l'affichage. Pour "supérieur à X" : mettre `"inverted": true` dans `type`, pas un paramètre. Paramètres `[Objet1, Objet2, valeur]`. Fonctionne aussi objet contre lui-même (ex. `Gobelin`/`Gobelin`) — le moteur exclut automatiquement la comparaison d'une instance avec elle-même |
+| Forcer un objet à se déplacer vers un autre | `AddForceTowardObject` | Paramètres `[Objet1, ObjetCible, vitesse, ""]` |
+| Écarter deux objets qui se chevauchent | `SeparateFromObjects` | Pas `SeparateObjectsWithoutForces` ni `AddForceAwayFromObject` (n'existent pas). Paramètres `[Objet1, Objet2, ""]` |
+
+**Réflexe si un nom n'est pas dans cette liste** : proposer la meilleure hypothèse, prévenir explicitement Arnaud que ce n'est pas vérifié, et lui demander de signaler precisément quel bloc ressort rouge après rechargement dans l'éditeur — jamais réessayer une 2e fois à l'aveugle sans nouvelle information (comparer le texte affiché par l'éditeur avant de re-deviner, ou laisser Arnaud sélectionner l'action directement dans le moteur de recherche de l'éditeur si 2 tentatives ont échoué).
+
 ## Avant de déclarer une modification terminée
 
 Aucune déclaration de type "c'est fait" / "corrigé" sans vérification fraîche :

@@ -80,7 +80,11 @@ Rôles distincts par les stats, pas une matrice de contre-types (cohérent avec 
 
 **Style visuel** : pixel art, pipeline déjà en main (Sorceress/GDevelop, comme sur TLR) — confirmé, pas de changement de style à prévoir. Budget d'assets à garder conscient : peu de types, variantes par recolor plutôt que sprites uniques.
 
-**Méta-progression (orbes)** : au moins une amélioration envisagée — cooldown d'invocation plus bas. Reste du contenu volontairement laissé ouvert ("on verra ça au fur et à mesure") — pas bloquant pour la suite de la descente.
+**Méta-progression (orbes) — liste fermée, décidée le 2026-07-22** : 2 améliorations permanentes, achat unique chacune (pas de paliers multiples, cohérent avec "pas un arbre complet"). Les orbes s'accumulent comme monnaie sans être dépensées en franchissant le seuil de sortie d'un niveau (double usage : seuil de sortie + monnaie de méta-progression).
+- **Cooldown d'invocation -20%** (Gobelin 2s→1,6s / Démon 5s→4s / Colosse 10s→8s) — coût 100 orbes. Axe offense/économie.
+- **PV max du nécromancien +25%** — coût 150 orbes (plus impactant → coûte plus cher). Axe survie — seul levier qui touche directement le seul game over du jeu (mort du nécromancien), distinct du premier axe.
+
+⚠️ Coûts et valeurs = première passe, à ajuster en playtest (même statut que le reste des chiffres du concept).
 
 **Score = orbes (décidé le 2026-07-20)** : une seule monnaie, pas deux compteurs séparés — cohérent avec le principe directeur "finir vite > riche" (moins d'UI, moins à expliquer). Risque de farming des niveaux faciles accepté pour la V1, à corriger plus tard si besoin (ex. rendement décroissant sur un niveau déjà nettoyé) — pas bloquant maintenant.
 
@@ -105,11 +109,44 @@ Rôles distincts par les stats, pas une matrice de contre-types (cohérent avec 
 
 La version à 5 niveaux (un par étape narrative) reste une option V2 facile (redécouper les niveaux fusionnés), pas une perte définitive.
 
+## Design concret des 3 niveaux (décidé le 2026-07-22)
+
+**Base commune** :
+- Caméra : suit le nécromancien (niveau plus grand que l'écran), pas d'écran fixe type arène.
+- Échelle : convention héritée de TLR reprise comme point de départ (grille 32×32 px, personnage affiché ~128px).
+- Vitesse de déplacement du nécromancien : 6 tiles/s (192 px/s).
+- Valeur d'une orbe : 1 kill = 1 orbe (valeur unique, pas de pondération par type d'ennemi) — cohérent avec "score = orbes, une seule monnaie".
+- Seuil de sortie : ~70% du total d'orbes tuables disponibles sur le niveau, sur les trois niveaux.
+- Ennemis : mix socle fixe (placés à la main, en clusters) + vagues de spawn déclenchées à des paliers de progression des orbes collectées.
+
+⚠️ Comme pour l'économie de mana, la vitesse, les dimensions, le nombre d'ennemis et les seuils ci-dessous sont une première passe de chiffrage — à ajuster en playtest, pas à considérer figés.
+
+**Niveau 1 — Abords du village** :
+- Durée de jeu visée : ~3 min avant seuil d'orbes.
+- Dimensions : 56×32 tiles (1792×1024 px monde).
+- Ennemis fixes : ~12-15 villageois, clusters de 2-4 autour de points d'intérêt (maisons, puits).
+- Vagues : 2, déclenchées à 30% et 60% des orbes collectées.
+- Total tuable ≈ 27-28 orbes, seuil de sortie ≈ 19-20 (70%).
+
+**Niveau 2 — Centre pavé + pied du château** :
+- Durée de jeu visée : ~3-4 min.
+- Dimensions : 40×26 tiles (1280×832 px monde) — plus resserré que N1.
+- Ennemis fixes : ~10-12 (villageois + gardes plus coriaces), clusters de 3-5.
+- Vagues : 3, déclenchées à 25% / 50% / 75% des orbes.
+- Obstacles défensifs : 6-8 blocs statiques (barricades/caisses) créant des chicanes entre clusters. Bloquent à la fois le déplacement physique (nécromancien + invocations) et la ligne de vue/le clic-cible — décidé le 2026-07-22 pour éviter la confusion visuelle d'un obstacle traversable.
+- Total tuable ≈ 24-27 orbes, seuil de sortie ≈ 17-19 (70%).
+
+**Niveau 3 — Couloirs + sommet** :
+- Durée de jeu visée : ~4-5 min (le plus long, climax narratif).
+- Dimensions : couloir ~50×10 tiles menant à un sommet ~36×30 tiles (bounding total ~60×34), en une seule scène.
+- Ennemis couloirs : 6-8 héros, clusters de 2 max (l'étroitesse limite la taille des groupes rencontrés).
+- Ennemis sommet : socle fixe ~8-10 héros + 2 vagues avant le boss.
+- Total tuable ≈ 20-24 orbes, seuil de sortie ≈ 14-17 (70%).
+- Boss final : apparaît automatiquement une fois le seuil d'orbes atteint — incarne/remplace la fenêtre de sortie intensifiée déjà décidée (10s), plutôt qu'un combat de boss séparé avant déblocage. Le joueur doit atteindre la sortie pendant que le boss le poursuit. Décidé le 2026-07-22.
+
 ## Ouvert — prochaine étape de la descente (pour la V1)
 
-- Design concret des 3 niveaux (dimensions, nombre/placement d'ennemis précis par niveau).
-- Reste de la liste des améliorations permanentes de méta-progression (au-delà du cooldown plus bas déjà cité).
-- Nom définitif du jeu.
+- Nom définitif du jeu (secondaire pour l'instant, priorité basse sur ce prototype).
 
 ## Moteur technique — confirmé (2026-07-20)
 
