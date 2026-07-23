@@ -21,7 +21,17 @@ Guide de navigation dans `PROJECT/game/Projet X.json`. Consulter avant toute rec
 - `Personnages` : Necromancien (variable `PV`, défaut 100 — pas encore de méta-progression dessus)
 - `Invocations` : Gobelin
 - `Ennemis` : Villageois (variable `GobelinBloque` : recalculée chaque frame, 1 = un Gobelin est au contact (40px) — sert de repli avant d'attaquer le Nécromancien), Horde (variable `CooldownAttaque` — unité de la horde finale, foncent direct sur le Nécromancien, PV/dégâts non simulés côté Horde : objet volontairement non attaquable, incarne "impossible à combattre")
-- `Décor` : RepereDecor, Sortie
+- `Décor` : RepereDecor, Sortie, **SolHerbe, SolChemin, SolBordHaut, SolBordBas, SolBordGauche, SolBordDroite, SolCoinA, SolCoinB, SolPaves** (ajoutés 2026-07-23, tuiles de sol 32×32, voir `PIPELINE_DECOR.md` section 8 — objets Sprite créés en réserve pour un placement ponctuel hors tilemap, aucune instance placée. Origine (16,16) comme le reste des objets du projet), **NewTileMap** (créé par Arnaud 2026-07-23, objet `TileMap::SimpleTileMap` — atlas `sol_atlas.png`, planche 3×3 assemblée à partir des 9 tuiles, voir `PIPELINE_DECOR.md` section 8. **2 instances placées sur le calque `Sol`** (voir section Calques ci-dessous) : une couvrant toute la scène en herbe (56×32, remplissage uni), une pour le chemin peint par Arnaud (1×8 au 2026-07-23, position recalée sur la grille 32px). ⚠️ `SolHerbeFond` (`TiledSpriteObject::TiledSprite`) créé puis **retiré le 2026-07-23** — ne s'alignait pas avec la grille du Tilemap, remplacé par une 2e instance de `NewTileMap`, voir skill `gdevelop-operations`)
+
+### Calques (layers), dans l'ordre de rendu (2026-07-23)
+
+| Ordre (bas→haut) | Nom | Contenu |
+|---|---|---|
+| 1 (fond) | `Sol` | Les 2 instances `NewTileMap` (herbe + chemin) — jamais d'objet de gameplay ici |
+| 2 | `` (base) | Tous les objets de gameplay/décor (Necromancien, Villageois, Gobelin, RepereDecor, Sortie, UI...) — rendu au-dessus du Sol quel que soit le zOrder individuel |
+| 3 (dessus) | `Debug` | Textes de debug (`TxtMana`, `TxtCooldown`, `TxtOrbes`) |
+
+Un objet placé sur un calque donné s'affiche toujours au-dessus de tout ce qui est sur un calque antérieur dans cette liste, indépendamment du zOrder — le zOrder ne départage qu'entre objets du **même** calque.
 - `UI` : TxtMana, TxtCooldown, TxtOrbes, TxtSortieStatut, TxtNiveauTermine, TxtPVNecro, TxtGameOver, TxtFenetreSortie
 - `Effets` : TxtDegats, TxtAggro
 
