@@ -129,26 +129,26 @@
         "userAdded": true
       },
       {
-        "file": "assets/maison_pierre.png",
+        "file": "assets/maison_pierre_v2.png",
         "kind": "image",
         "metadata": "",
-        "name": "maison_pierre.png",
+        "name": "maison_pierre_v2.png",
         "smoothed": false,
         "userAdded": true
       },
       {
-        "file": "assets/maison_colombage.png",
+        "file": "assets/maison_colombage_v2.png",
         "kind": "image",
         "metadata": "",
-        "name": "maison_colombage.png",
+        "name": "maison_colombage_v2.png",
         "smoothed": false,
         "userAdded": true
       },
       {
-        "file": "assets/maison_beige_fleurs.png",
+        "file": "assets/maison_beige_fleurs_v2.png",
         "kind": "image",
         "metadata": "",
-        "name": "maison_beige_fleurs.png",
+        "name": "maison_beige_fleurs_v2.png",
         "smoothed": false,
         "userAdded": true
       },
@@ -1335,7 +1335,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "maison_pierre.png",
+                      "image": "maison_pierre_v2.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -1376,7 +1376,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "maison_colombage.png",
+                      "image": "maison_colombage_v2.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -1417,7 +1417,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "maison_beige_fleurs.png",
+                      "image": "maison_beige_fleurs_v2.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
