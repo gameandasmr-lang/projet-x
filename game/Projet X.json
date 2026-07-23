@@ -95,6 +95,14 @@
         "name": "decor_placeholder.png",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "file": "assets/horde_placeholder.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "horde_placeholder.png",
+        "smoothed": false,
+        "userAdded": true
       }
     ]
   },
@@ -238,6 +246,31 @@
       "name": "GameOver",
       "type": "number",
       "value": 0
+    },
+    {
+      "name": "FenetreSortieActive",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "FenetreSortieTemps",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "FenetreSortieDuree",
+      "type": "number",
+      "value": 10
+    },
+    {
+      "name": "DegatsHorde",
+      "type": "number",
+      "value": 40
+    },
+    {
+      "name": "CooldownAttaqueHordeDuree",
+      "type": "number",
+      "value": 0.5
     }
   ],
   "layouts": [
@@ -756,6 +789,21 @@
           "customSize": false,
           "height": 0,
           "layer": "Debug",
+          "name": "TxtFenetreSortie",
+          "persistentUuid": "f1a2b3c4-0007-4e5f-8a9b-6c7d8e9f0a08",
+          "width": 0,
+          "x": 20,
+          "y": 170,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Debug",
           "name": "TxtGameOver",
           "persistentUuid": "f1a2b3c4-0006-4e5f-8a9b-6c7d8e9f0a07",
           "width": 0,
@@ -1008,6 +1056,53 @@
                     {
                       "hasCustomCollisionMask": false,
                       "image": "villageois_placeholder.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 16,
+                        "y": 16
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": false,
+          "assetStoreId": "",
+          "name": "Horde",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [
+            {
+              "name": "CooldownAttaque",
+              "type": "number",
+              "value": 0
+            }
+          ],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "Idle",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 1,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "horde_placeholder.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -1382,6 +1477,49 @@
         },
         {
           "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "TxtFenetreSortie",
+          "smoothed": false,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 24,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": false,
+            "underlined": false,
+            "text": "",
+            "font": "",
+            "textAlignment": "left",
+            "verticalTextAlignment": "top",
+            "characterSize": 24,
+            "lineHeight": 0,
+            "color": "255;255;255"
+          }
+        },
+        {
+          "assetStoreId": "",
           "bold": true,
           "italic": false,
           "name": "TxtNiveauTermine",
@@ -1534,6 +1672,9 @@
             "children": [
               {
                 "objectName": "Villageois"
+              },
+              {
+                "objectName": "Horde"
               }
             ]
           },
@@ -1571,6 +1712,9 @@
               },
               {
                 "objectName": "TxtGameOver"
+              },
+              {
+                "objectName": "TxtFenetreSortie"
               }
             ]
           },
@@ -4889,6 +5033,106 @@
                     "\"NIVEAU TERMINÉ !\""
                   ]
                 }
+              ]
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "name": "Fenêtre de Sortie",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                { "type": { "value": "VarGlobal" }, "parameters": ["SortieDeverrouillee", "=", "1"] },
+                { "type": { "value": "VarGlobal" }, "parameters": ["FenetreSortieActive", "=", "0"] },
+                { "type": { "value": "VarGlobal" }, "parameters": ["NiveauTermine", "=", "0"] },
+                { "type": { "value": "VarGlobal" }, "parameters": ["GameOver", "=", "0"] }
+              ],
+              "actions": [
+                { "type": { "value": "ModVarGlobal" }, "parameters": ["FenetreSortieActive", "=", "1"] },
+                { "type": { "value": "ModVarGlobal" }, "parameters": ["FenetreSortieTemps", "=", "GlobalVariable(FenetreSortieDuree)"] },
+                { "type": { "value": "Create" }, "parameters": ["", "Villageois", "Sortie.X()-40", "Sortie.Y()-30", ""] },
+                { "type": { "value": "Create" }, "parameters": ["", "Villageois", "Sortie.X()+10", "Sortie.Y()-40", ""] },
+                { "type": { "value": "Create" }, "parameters": ["", "Villageois", "Sortie.X()-60", "Sortie.Y()+10", ""] },
+                { "type": { "value": "Create" }, "parameters": ["", "Villageois", "Sortie.X()+30", "Sortie.Y()+30", ""] },
+                { "type": { "value": "Create" }, "parameters": ["", "Villageois", "Sortie.X()-20", "Sortie.Y()+50", ""] },
+                { "type": { "value": "Create" }, "parameters": ["", "Villageois", "Sortie.X()+50", "Sortie.Y()-10", ""] },
+                { "type": { "value": "ModVarObjet" }, "parameters": ["Villageois", "GroupeAuCombat", "=", "1"] }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                { "type": { "value": "VarGlobal" }, "parameters": ["FenetreSortieActive", "=", "1"] },
+                { "type": { "value": "VarGlobal" }, "parameters": ["NiveauTermine", "=", "0"] },
+                { "type": { "value": "VarGlobal" }, "parameters": ["GameOver", "=", "0"] }
+              ],
+              "actions": [
+                { "type": { "value": "ModVarGlobal" }, "parameters": ["FenetreSortieTemps", "-", "TimeDelta()"] },
+                { "type": { "value": "TextObject::String" }, "parameters": ["TxtFenetreSortie", "=", "\"Sortie dans : \"+ToString(round(GlobalVariable(FenetreSortieTemps)*10)/10)+\"s\""] }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                { "type": { "value": "VarGlobal" }, "parameters": ["FenetreSortieActive", "=", "1"] },
+                { "type": { "value": "VarGlobal" }, "parameters": ["FenetreSortieTemps", "<=", "0"] }
+              ],
+              "actions": [
+                { "type": { "value": "ModVarGlobal" }, "parameters": ["FenetreSortieActive", "=", "0"] },
+                { "type": { "value": "TextObject::String" }, "parameters": ["TxtFenetreSortie", "=", "\"\""] },
+                { "type": { "value": "Create" }, "parameters": ["", "Horde", "Necromancien.X()+90", "Necromancien.Y()+0", ""] },
+                { "type": { "value": "Create" }, "parameters": ["", "Horde", "Necromancien.X()+73", "Necromancien.Y()+53", ""] },
+                { "type": { "value": "Create" }, "parameters": ["", "Horde", "Necromancien.X()+28", "Necromancien.Y()+86", ""] },
+                { "type": { "value": "Create" }, "parameters": ["", "Horde", "Necromancien.X()-28", "Necromancien.Y()+86", ""] },
+                { "type": { "value": "Create" }, "parameters": ["", "Horde", "Necromancien.X()-73", "Necromancien.Y()+53", ""] },
+                { "type": { "value": "Create" }, "parameters": ["", "Horde", "Necromancien.X()-90", "Necromancien.Y()+0", ""] },
+                { "type": { "value": "Create" }, "parameters": ["", "Horde", "Necromancien.X()-73", "Necromancien.Y()-53", ""] },
+                { "type": { "value": "Create" }, "parameters": ["", "Horde", "Necromancien.X()-28", "Necromancien.Y()-86", ""] },
+                { "type": { "value": "Create" }, "parameters": ["", "Horde", "Necromancien.X()+28", "Necromancien.Y()-86", ""] },
+                { "type": { "value": "Create" }, "parameters": ["", "Horde", "Necromancien.X()+73", "Necromancien.Y()-53", ""] }
+              ]
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "name": "Combat Horde",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                { "type": { "inverted": true, "value": "Distance" }, "parameters": ["Horde", "Necromancien", "40"] }
+              ],
+              "actions": [
+                { "type": { "value": "AddForceTowardObject" }, "parameters": ["Horde", "Necromancien", "200", ""] }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                { "type": { "value": "Distance" }, "parameters": ["Horde", "Necromancien", "40"] },
+                { "type": { "value": "VarObjet" }, "parameters": ["Horde", "CooldownAttaque", "<=", "0"] }
+              ],
+              "actions": [
+                { "type": { "value": "ModVarObjet" }, "parameters": ["Necromancien", "PV", "-", "GlobalVariable(DegatsHorde)"] },
+                { "type": { "value": "ModVarObjet" }, "parameters": ["Horde", "CooldownAttaque", "=", "GlobalVariable(CooldownAttaqueHordeDuree)"] },
+                { "type": { "value": "Create" }, "parameters": ["", "TxtDegats", "Necromancien.X()", "Necromancien.Y()-40", ""] },
+                { "type": { "value": "TextObject::String" }, "parameters": ["TxtDegats", "=", "\"-\"+ToString(GlobalVariable(DegatsHorde))"] }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                { "type": { "value": "VarObjet" }, "parameters": ["Horde", "CooldownAttaque", ">", "0"] }
+              ],
+              "actions": [
+                { "type": { "value": "ModVarObjet" }, "parameters": ["Horde", "CooldownAttaque", "-", "TimeDelta()"] }
               ]
             }
           ],

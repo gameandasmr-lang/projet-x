@@ -20,9 +20,9 @@ Guide de navigation dans `PROJECT/game/Projet X.json`. Consulter avant toute rec
 ### Objets (par dossier)
 - `Personnages` : Necromancien (variable `PV`, défaut 100 — pas encore de méta-progression dessus)
 - `Invocations` : Gobelin
-- `Ennemis` : Villageois (variable `GobelinBloque` : recalculée chaque frame, 1 = un Gobelin est au contact (40px) — sert de repli avant d'attaquer le Nécromancien)
+- `Ennemis` : Villageois (variable `GobelinBloque` : recalculée chaque frame, 1 = un Gobelin est au contact (40px) — sert de repli avant d'attaquer le Nécromancien), Horde (variable `CooldownAttaque` — unité de la horde finale, foncent direct sur le Nécromancien, PV/dégâts non simulés côté Horde : objet volontairement non attaquable, incarne "impossible à combattre")
 - `Décor` : RepereDecor, Sortie
-- `UI` : TxtMana, TxtCooldown, TxtOrbes, TxtSortieStatut, TxtNiveauTermine, TxtPVNecro, TxtGameOver
+- `UI` : TxtMana, TxtCooldown, TxtOrbes, TxtSortieStatut, TxtNiveauTermine, TxtPVNecro, TxtGameOver, TxtFenetreSortie
 - `Effets` : TxtDegats, TxtAggro
 
 ### Groupes d'événements, dans l'ordre d'exécution
@@ -46,6 +46,8 @@ Guide de navigation dans `PROJECT/game/Projet X.json`. Consulter avant toute rec
 | 15 | `Vagues Niveau 1` | Spawn de 7 Villageois à 8 orbes (rejoint GroupeID 1) et 7 à 16 orbes (rejoint GroupeID 2), tous avec `GroupeAuCombat`=1 dès l'apparition (déjà "en mode combat", même règle que les clusters de base) |
 | 16 | `Game Over` | Déclenchement du Game Over (texte `TxtGameOver`) quand PV Nécro ≤ 0 |
 | 17 | `Sortie Niveau` | Déblocage sortie au seuil d'orbes, statut, fin de niveau |
+| 18 | `Fenêtre de Sortie` | Au déblocage : démarre le timer 10s (`FenetreSortieActive`/`FenetreSortieTemps`) + vague ponctuelle de 6 Villageois près de la Sortie (`GroupeAuCombat`=1 direct). Décompte + affichage `TxtFenetreSortie`. À expiration sans `NiveauTermine` : spawn de 10 `Horde` en cercle autour du Nécromancien |
+| 19 | `Combat Horde` | Chaque Horde fonce sur le Nécromancien (pas de ForEach, cible toujours singleton) et l'attaque au contact (40px) — mêmes dégâts/cooldown/texte que `Combat Villageois`, en plus violent (`DegatsHorde`=40, cooldown 0.5s) |
 
 ---
 
@@ -64,4 +66,4 @@ Guide de navigation dans `PROJECT/game/Projet X.json`. Consulter avant toute rec
 
 ## Variables globales actuelles
 
-`Mana`, `ManaMax`, `CoutGobelin`, `CooldownGobelin`, `CooldownGobelinDuree`, `CibleActive`, `DegatsGobelin`, `CooldownAttaqueGobelinDuree`, `GroupeCible`, `NbCiblesGroupe`, `DegatsVillageois`, `CooldownAttaqueVillageoisDuree`, `Groupe1Aggro`, `Groupe2Aggro`, `Groupe1FuiteDX/DY`, `Groupe2FuiteDX/DY`, `Groupe1Combat`, `Groupe2Combat`, `Orbes`, `OrbesSeuil`, `SortieDeverrouillee`, `NiveauTermine`, `Vague1Faite`, `Vague2Faite`, `GameOver`.
+`Mana`, `ManaMax`, `CoutGobelin`, `CooldownGobelin`, `CooldownGobelinDuree`, `CibleActive`, `DegatsGobelin`, `CooldownAttaqueGobelinDuree`, `GroupeCible`, `NbCiblesGroupe`, `DegatsVillageois`, `CooldownAttaqueVillageoisDuree`, `Groupe1Aggro`, `Groupe2Aggro`, `Groupe1FuiteDX/DY`, `Groupe2FuiteDX/DY`, `Groupe1Combat`, `Groupe2Combat`, `Orbes`, `OrbesSeuil`, `SortieDeverrouillee`, `NiveauTermine`, `Vague1Faite`, `Vague2Faite`, `GameOver`, `FenetreSortieActive`, `FenetreSortieTemps`, `FenetreSortieDuree`, `DegatsHorde`, `CooldownAttaqueHordeDuree`.
