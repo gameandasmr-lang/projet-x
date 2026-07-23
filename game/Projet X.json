@@ -105,82 +105,58 @@
         "userAdded": true
       },
       {
-        "file": "assets/sol_herbe.png",
+        "file": "assets/prop_puits.png",
         "kind": "image",
         "metadata": "",
-        "name": "sol_herbe.png",
+        "name": "prop_puits.png",
         "smoothed": false,
         "userAdded": true
       },
       {
-        "file": "assets/sol_chemin.png",
+        "file": "assets/prop_tonneau.png",
         "kind": "image",
         "metadata": "",
-        "name": "sol_chemin.png",
+        "name": "prop_tonneau.png",
         "smoothed": false,
         "userAdded": true
       },
       {
-        "file": "assets/sol_bord_haut.png",
+        "file": "assets/prop_etal_marche.png",
         "kind": "image",
         "metadata": "",
-        "name": "sol_bord_haut.png",
+        "name": "prop_etal_marche.png",
         "smoothed": false,
         "userAdded": true
       },
       {
-        "file": "assets/sol_bord_bas.png",
+        "file": "assets/maison_pierre.png",
         "kind": "image",
         "metadata": "",
-        "name": "sol_bord_bas.png",
+        "name": "maison_pierre.png",
         "smoothed": false,
         "userAdded": true
       },
       {
-        "file": "assets/sol_bord_gauche.png",
+        "file": "assets/maison_colombage.png",
         "kind": "image",
         "metadata": "",
-        "name": "sol_bord_gauche.png",
+        "name": "maison_colombage.png",
         "smoothed": false,
         "userAdded": true
       },
       {
-        "file": "assets/sol_bord_droite.png",
+        "file": "assets/maison_beige_fleurs.png",
         "kind": "image",
         "metadata": "",
-        "name": "sol_bord_droite.png",
+        "name": "maison_beige_fleurs.png",
         "smoothed": false,
         "userAdded": true
       },
       {
-        "file": "assets/sol_coin_a.png",
+        "file": "assets/sol_atlas_pixellab.png",
         "kind": "image",
         "metadata": "",
-        "name": "sol_coin_a.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "file": "assets/sol_coin_b.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "sol_coin_b.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "file": "assets/sol_paves.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "sol_paves.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "file": "assets/sol_atlas.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "sol_atlas.png",
+        "name": "sol_atlas_pixellab.png",
         "smoothed": false,
         "userAdded": true
       }
@@ -376,7 +352,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.9610368693714727,
+        "zoomFactor": 0.9610368693714736,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -658,126 +634,6 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "",
-          "name": "RepereDecor",
-          "persistentUuid": "1ff605ac-363d-4766-804a-0d61608e8f68",
-          "width": 0,
-          "x": 896,
-          "y": 300,
-          "zOrder": 0,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "name": "RepereDecor",
-          "persistentUuid": "c6377c11-d229-4c26-ad2c-82f9fe140451",
-          "width": 0,
-          "x": 896,
-          "y": 724,
-          "zOrder": 0,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "name": "RepereDecor",
-          "persistentUuid": "03ddbed8-ba0c-455a-8a04-f6a11c267a7e",
-          "width": 0,
-          "x": 650,
-          "y": 512,
-          "zOrder": 0,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "name": "RepereDecor",
-          "persistentUuid": "fff90143-d794-4459-81e4-00aee787003c",
-          "width": 0,
-          "x": 1150,
-          "y": 512,
-          "zOrder": 0,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "name": "RepereDecor",
-          "persistentUuid": "94871116-e7b2-4914-9393-947d5623f090",
-          "width": 0,
-          "x": 700,
-          "y": 300,
-          "zOrder": 0,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "name": "RepereDecor",
-          "persistentUuid": "65aaaef9-eec6-4098-bef3-8bf38c9529ce",
-          "width": 0,
-          "x": 1100,
-          "y": 300,
-          "zOrder": 0,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "name": "RepereDecor",
-          "persistentUuid": "d36036f3-b574-4336-a6cb-9a6a77d52cdd",
-          "width": 0,
-          "x": 700,
-          "y": 724,
-          "zOrder": 0,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "name": "RepereDecor",
-          "persistentUuid": "9de8e948-5d7c-49c3-9ebc-a1f05cdafe5f",
-          "width": 0,
-          "x": 1100,
-          "y": 724,
-          "zOrder": 0,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
           "layer": "Debug",
           "name": "TxtMana",
           "persistentUuid": "9f29f350-93e7-486a-aa4d-53231a959fa9",
@@ -913,6 +769,96 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
+          "layer": "",
+          "name": "MaisonPierre",
+          "persistentUuid": "b1000001-0000-4000-8000-000000000001",
+          "width": 0,
+          "x": 1150,
+          "y": 420,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "MaisonColombage",
+          "persistentUuid": "b1000002-0000-4000-8000-000000000002",
+          "width": 0,
+          "x": 600,
+          "y": 720,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "MaisonBeigeFleurs",
+          "persistentUuid": "b1000003-0000-4000-8000-000000000003",
+          "width": 0,
+          "x": 420,
+          "y": 470,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "PropPuits",
+          "persistentUuid": "b1000004-0000-4000-8000-000000000004",
+          "width": 0,
+          "x": 890,
+          "y": 370,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "PropTonneau",
+          "persistentUuid": "b1000005-0000-4000-8000-000000000005",
+          "width": 0,
+          "x": 750,
+          "y": 400,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "PropEtalMarche",
+          "persistentUuid": "b1000006-0000-4000-8000-000000000006",
+          "width": 0,
+          "x": 1020,
+          "y": 400,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
           "keepRatio": true,
           "layer": "Sol",
           "name": "NewTileMap",
@@ -925,7 +871,7 @@
           "stringProperties": [
             {
               "name": "tilemap",
-              "value": "{\"tileWidth\":32,\"tileHeight\":32,\"dimX\":1,\"dimY\":8,\"layers\":[{\"id\":0,\"alpha\":1,\"tiles\":[[1],[1],[1],[1],[1],[1],[1],[1]]}]}"
+              "value": "{\"tileWidth\":32,\"tileHeight\":32,\"dimX\":1,\"dimY\":8,\"layers\":[{\"id\":0,\"alpha\":1,\"tiles\":[[6],[6],[6],[6],[6],[6],[6],[6]]}]}"
             }
           ],
           "initialVariables": []
@@ -946,7 +892,7 @@
           "stringProperties": [
             {
               "name": "tilemap",
-              "value": "{\"tileWidth\":32,\"tileHeight\":32,\"dimX\":56,\"dimY\":32,\"layers\":[{\"id\":0,\"alpha\":1,\"tiles\":[[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]]}]}"
+              "value": "{\"tileWidth\":32,\"tileHeight\":32,\"dimX\":56,\"dimY\":32,\"layers\":[{\"id\":0,\"alpha\":1,\"tiles\":[[12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12],[12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12],[12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12],[12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12],[12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12],[12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12],[12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12],[12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12],[12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12],[12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,29,19,19,19,19,19,19,19,19,19,19,19,19,19,16,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12],[12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,17,22,22,22,22,22,22,22,22,22,22,22,22,22,27,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12],[12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,17,22,22,22,22,22,22,22,22,22,22,22,22,22,27,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12],[12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,17,22,22,22,22,22,22,22,22,22,22,22,22,22,27,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12],[12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,17,22,22,22,22,22,22,22,22,22,22,22,22,22,27,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12],[12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,24,25,25,25,25,25,25,25,25,25,25,25,25,25,31,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12],[12,12,12,12,12,12,12,12,12,12,12,12,13,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,0,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12],[12,12,12,12,12,12,12,12,12,12,12,12,1,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,11,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12],[12,12,12,12,12,12,12,12,12,12,12,12,1,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,11,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12],[12,12,12,12,12,12,12,12,12,12,12,12,8,9,9,9,9,9,9,9,9,10,6,6,7,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,15,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12],[12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,1,6,6,11,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12],[12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,1,6,6,11,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12],[12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,1,6,6,11,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12],[12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,8,9,9,15,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12],[12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12],[12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12],[12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12],[12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12],[12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12],[12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12],[12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12],[12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12],[12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12]]}]}"
             }
           ],
           "initialVariables": []
@@ -1248,7 +1194,7 @@
         {
           "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
-          "name": "RepereDecor",
+          "name": "PropPuits",
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [],
@@ -1265,12 +1211,12 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "decor_placeholder.png",
+                      "image": "prop_puits.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
-                        "x": 16,
-                        "y": 16
+                        "x": 32,
+                        "y": 64
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -1289,7 +1235,7 @@
         {
           "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
-          "name": "SolHerbe",
+          "name": "PropTonneau",
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [],
@@ -1306,12 +1252,12 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "sol_herbe.png",
+                      "image": "prop_tonneau.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
                         "x": 16,
-                        "y": 16
+                        "y": 32
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -1330,7 +1276,7 @@
         {
           "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
-          "name": "SolChemin",
+          "name": "PropEtalMarche",
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [],
@@ -1347,12 +1293,12 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "sol_chemin.png",
+                      "image": "prop_etal_marche.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
-                        "x": 16,
-                        "y": 16
+                        "x": 32,
+                        "y": 64
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -1371,7 +1317,8 @@
         {
           "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
-          "name": "SolBordHaut",
+          "name": "MaisonPierre",
+          "persistentUuid": "9264d54a-702e-4283-af33-28789772f4cd",
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [],
@@ -1388,12 +1335,12 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "sol_bord_haut.png",
+                      "image": "maison_pierre.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
-                        "x": 16,
-                        "y": 16
+                        "x": 32,
+                        "y": 64
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -1412,7 +1359,7 @@
         {
           "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
-          "name": "SolBordBas",
+          "name": "MaisonColombage",
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [],
@@ -1429,12 +1376,12 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "sol_bord_bas.png",
+                      "image": "maison_colombage.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
-                        "x": 16,
-                        "y": 16
+                        "x": 32,
+                        "y": 64
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -1453,7 +1400,7 @@
         {
           "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
-          "name": "SolBordGauche",
+          "name": "MaisonBeigeFleurs",
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [],
@@ -1470,177 +1417,12 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "sol_bord_gauche.png",
+                      "image": "maison_beige_fleurs.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
-                        "x": 16,
-                        "y": 16
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "adaptCollisionMaskAutomatically": false,
-          "assetStoreId": "",
-          "name": "SolBordDroite",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "Idle",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 1,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "sol_bord_droite.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 16,
-                        "y": 16
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "adaptCollisionMaskAutomatically": false,
-          "assetStoreId": "",
-          "name": "SolCoinA",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "Idle",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 1,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "sol_coin_a.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 16,
-                        "y": 16
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "adaptCollisionMaskAutomatically": false,
-          "assetStoreId": "",
-          "name": "SolCoinB",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "Idle",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 1,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "sol_coin_b.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 16,
-                        "y": 16
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "adaptCollisionMaskAutomatically": false,
-          "assetStoreId": "",
-          "name": "SolPaves",
-          "persistentUuid": "e7237030-b523-4383-84f5-96104ddb60eb",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "Idle",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 1,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "sol_paves.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 16,
-                        "y": 16
+                        "x": 32,
+                        "y": 64
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -1860,7 +1642,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "sortie_placeholder.png",
+                      "image": "decor_placeholder.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -2148,9 +1930,9 @@
           "effects": [],
           "behaviors": [],
           "content": {
-            "atlasImage": "sol_atlas.png",
-            "rowCount": 3,
-            "columnCount": 3,
+            "atlasImage": "sol_atlas_pixellab.png",
+            "rowCount": 8,
+            "columnCount": 4,
             "tileSize": 32,
             "tilesWithHitBox": ""
           }
@@ -2190,40 +1972,33 @@
             "folderName": "Décor",
             "children": [
               {
-                "objectName": "RepereDecor"
-              },
-              {
                 "objectName": "Sortie"
               },
               {
-                "objectName": "SolHerbe"
-              },
-              {
-                "objectName": "SolChemin"
-              },
-              {
-                "objectName": "SolBordHaut"
-              },
-              {
-                "objectName": "SolBordBas"
-              },
-              {
-                "objectName": "SolBordGauche"
-              },
-              {
-                "objectName": "SolBordDroite"
-              },
-              {
-                "objectName": "SolCoinA"
-              },
-              {
-                "objectName": "SolCoinB"
-              },
-              {
-                "objectName": "SolPaves"
-              },
-              {
                 "objectName": "NewTileMap"
+              },
+              {
+                "objectName": "PropPuits"
+              },
+              {
+                "objectName": "PropTonneau"
+              },
+              {
+                "objectName": "PropEtalMarche"
+              }
+            ]
+          },
+          {
+            "folderName": "Bâtiments",
+            "children": [
+              {
+                "objectName": "MaisonPierre"
+              },
+              {
+                "objectName": "MaisonColombage"
+              },
+              {
+                "objectName": "MaisonBeigeFleurs"
               }
             ]
           },

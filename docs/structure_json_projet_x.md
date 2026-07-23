@@ -21,7 +21,25 @@ Guide de navigation dans `PROJECT/game/Projet X.json`. Consulter avant toute rec
 - `Personnages` : Necromancien (variable `PV`, défaut 100 — pas encore de méta-progression dessus)
 - `Invocations` : Gobelin
 - `Ennemis` : Villageois (variable `GobelinBloque` : recalculée chaque frame, 1 = un Gobelin est au contact (40px) — sert de repli avant d'attaquer le Nécromancien), Horde (variable `CooldownAttaque` — unité de la horde finale, foncent direct sur le Nécromancien, PV/dégâts non simulés côté Horde : objet volontairement non attaquable, incarne "impossible à combattre")
-- `Décor` : RepereDecor, Sortie, **SolHerbe, SolChemin, SolBordHaut, SolBordBas, SolBordGauche, SolBordDroite, SolCoinA, SolCoinB, SolPaves** (ajoutés 2026-07-23, tuiles de sol 32×32, voir `PIPELINE_DECOR.md` section 8 — objets Sprite créés en réserve pour un placement ponctuel hors tilemap, aucune instance placée. Origine (16,16) comme le reste des objets du projet), **NewTileMap** (créé par Arnaud 2026-07-23, objet `TileMap::SimpleTileMap` — atlas `sol_atlas.png`, planche 3×3 assemblée à partir des 9 tuiles, voir `PIPELINE_DECOR.md` section 8. **2 instances placées sur le calque `Sol`** (voir section Calques ci-dessous) : une couvrant toute la scène en herbe (56×32, remplissage uni), une pour le chemin peint par Arnaud (1×8 au 2026-07-23, position recalée sur la grille 32px). ⚠️ `SolHerbeFond` (`TiledSpriteObject::TiledSprite`) créé puis **retiré le 2026-07-23** — ne s'alignait pas avec la grille du Tilemap, remplacé par une 2e instance de `NewTileMap`, voir skill `gdevelop-operations`)
+- `Décor` : Sortie (image `decor_placeholder.png` depuis le fix du 2026-07-23 — `sortie_placeholder.png` référencé mais jamais créé ni déclaré en resource, bug préexistant découvert et corrigé), **NewTileMap** (objet `TileMap::SimpleTileMap`, atlas `sol_atlas_pixellab.png`, 4 colonnes × 8 lignes = 32 tuiles, 2 tilesets Wang chaînés empilés : lignes 0-3 herbe↔chemin, lignes 4-7 herbe↔pavés, même tuile d'herbe des deux côtés — voir section suivante pour le détail des index), **PropPuits, PropTonneau, PropEtalMarche** (PixelLab `create_map_object`, mode basique, `view: low top-down` — origine bas-centre (32,64) pour puits/étal 64×64, (16,32) pour tonneau 32×32). ⚠️ **RepereDecor et les 9 objets Sorceress (SolHerbe, SolChemin, SolBordHaut/Bas/Gauche/Droite, SolCoinA/B, SolPaves) supprimés le 2026-07-23** (session 8, obsolètes — remplacés par `NewTileMap`+atlas PixelLab), fichiers PNG associés + ancien `sol_atlas.png` retirés du disque et des resources.
+- `Bâtiments` : **MaisonPierre, MaisonColombage, MaisonBeigeFleurs** — 3 variantes de maison pré-composées en une seule image chacune (PixelLab `create_map_object`, mode basique, 64×64, `view: low top-down`), remplace l'approche modulaire `create_building_kit` abandonnée (voir `PIPELINE_DECOR.md`). Origine bas-centre (32,64).
+
+### Scène complète v1 — instances placées (2026-07-23, session 8)
+
+Réseau de sol + décor conçu et peint entièrement par Claude Code (script PowerShell utilisant les métadonnées exactes des tilesets Wang pour un placement de tuiles correct, pas de devinette). Layout : route principale est-ouest (tuiles lignes 16-17, colonnes 13-40) avec une branche sud vers le cluster2 de Villageois (colonnes 22-23, lignes 16-21) ; une place pavée au nord de la route (colonnes 21-33, lignes 10-13, bordée) contenant le puits, le tonneau et l'étal de marché.
+
+| Objet | Position (px) | Repère |
+|---|---|---|
+| `MaisonPierre` | (1150, 420) | Est de la place, proche du cluster1 de Villageois |
+| `MaisonColombage` | (600, 720) | Bout de la branche sud, proche du cluster2 |
+| `MaisonBeigeFleurs` | (420, 470) | Bout ouest de la route principale |
+| `PropPuits` | (890, 370) | Centre de la place |
+| `PropTonneau` | (750, 400) | Place, côté ouest |
+| `PropEtalMarche` | (1020, 400) | Place, côté est |
+
+Index de tuiles utiles dans `sol_atlas_pixellab.png` (raw index = ligne×4+colonne) : **12** = herbe pure (bloc chemin), **6** = chemin pur, **28** = herbe pure (bloc pavés, art identique à 12), **22** = pavés pur — le reste de la grammaire (bords/coins) se choisit visuellement dans l'éditeur de tilemap. Aperçus générés dans `game/assets/apercu_scene_sol.png` (sol seul) et `apercu_scene_complete.png` (avec maisons/props) — utiles pour visualiser sans ouvrir GDevelop.
+
+**Prochaine session, priorités déjà identifiées par Arnaud (retours à venir)** : Base/Sommet+YSort pas encore fait sur les maisons (le Nécromancien passe toujours devant, jamais derrière) ; variété d'assets à étoffer selon les retours d'Arnaud (arbres, clôtures, autres bâtiments).
 
 ### Calques (layers), dans l'ordre de rendu (2026-07-23)
 
