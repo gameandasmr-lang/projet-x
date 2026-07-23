@@ -5,10 +5,11 @@ description: À utiliser pour toute lecture, création ou modification du JSON G
 
 # GDevelop Operations — Projet X
 
-Connaissance moteur générique, valable pour n'importe quel jeu GDevelop — pas de logique métier Projet X figée ici (elle vivra dans `docs/structure_json_projet_x.md` une fois qu'il existera).
+Connaissance moteur générique, valable pour n'importe quel jeu GDevelop — pas de logique métier Projet X figée ici (elle vit dans `docs/structure_json_projet_x.md`).
 
 ## Édition du JSON — discipline de base
 
+- **Consulter `docs/structure_json_projet_x.md` en premier** pour localiser directement le bon groupe (nom, rôle, ordre) plutôt que de re-deviner par grep à chaque session.
 - Toute écriture dans le JSON du projet se fait directement via Claude Code (Edit), jamais via un script Python/Node/PowerShell intermédiaire.
 - Ne jamais parser tout le fichier — cibler scène + groupe d'événements exact.
 - Relire le bloc modifié juste après l'écriture, pour confirmer que la structure JSON reste valide (accolades/tableaux fermés).
@@ -69,7 +70,7 @@ En écrivant le JSON directement (sans passer par l'éditeur), le nom exact d'un
 | Comparer une variable globale (condition) | `VarGlobal` | Paramètres `[nom, signe, valeur]` — signe **entre** nom et valeur |
 | Modifier une variable globale (action) | `ModVarGlobal` | Paramètres `[nom, opérateur ("+","-","="), valeur]` |
 | Changer le texte d'un objet Texte | `TextObject::String` | Pas `TextObject::SetString`. Paramètres `[NomObjet, "=", expression string]` |
-| Distance entre deux objets (condition) | `Distance` | **Sens fixe "est en dessous de X pixels"** — pas de paramètre de signe, un 4e paramètre existe mais ne change rien à l'affichage. Pour "supérieur à X" : mettre `"inverted": true` dans `type`, pas un paramètre. Paramètres `[Objet1, Objet2, valeur]`. Fonctionne aussi objet contre lui-même (ex. `Gobelin`/`Gobelin`) — le moteur exclut automatiquement la comparaison d'une instance avec elle-même |
+| Distance entre deux objets (condition) | `Distance` | **Sens fixe "est en dessous de X pixels"** — pas de paramètre de signe, un 4e paramètre existe mais ne change rien à l'affichage. Pour "supérieur à X" : mettre `"inverted": true` dans `type`, pas un paramètre. Paramètres `[Objet1, Objet2, valeur]`. Fonctionne aussi objet contre lui-même (ex. `Gobelin`/`Gobelin`) — le moteur exclut automatiquement la comparaison d'une instance avec elle-même. **Piège `PickNearest`/`Distance` inversé combiné à un objet qui peut avoir zéro instance** (ex. "aucun Gobelin vivant") : non testé si `PickNearest`/`Distance` sur une liste vide fait échouer tout l'event (comme le piège `VarObjet` inversé multi-instances) ou renvoie correctement "vrai". Évité par prudence dans ce projet (Villageois visant le Nécromancien même sans Gobelin en vie) via un **drapeau précalculé chaque frame dans le bon sens** (`GobelinBloque` : reset à 0 puis mis à 1 uniquement si un Gobelin est trouvé à portée), jamais une condition inversée directe sur un objet qui peut ne pas exister — même technique que `Bloque`/`NbCiblesGroupe` |
 | Forcer un objet à se déplacer vers un autre | `AddForceTowardObject` | Paramètres `[Objet1, ObjetCible, vitesse, ""]` |
 | Supprimer un objet | `Delete` | Paramètres `[NomObjet, NomObjet]` (le nom répété deux fois — pas `["", NomObjet, ""]` comme pour `Create`). Confirmé via l'éditeur qui a normalisé une première tentative différente sans faire ressortir de bloc rouge |
 | Écarter deux objets qui se chevauchent | `SeparateFromObjects` | Pas `SeparateObjectsWithoutForces` ni `AddForceAwayFromObject` (n'existent pas). Paramètres `[Objet1, Objet2, ""]` |
@@ -81,8 +82,11 @@ En écrivant le JSON directement (sans passer par l'éditeur), le nom exact d'un
 | Sélectionner l'objet le plus proche d'une position (condition) | `PickNearest` | Paramètres `[NomObjet, expressionX, expressionY, ""]` — à utiliser à l'intérieur d'un `ForEach` sur l'autre objet pour filtrer par rapport à l'instance courante (ex. `Gobelin.X()`/`Gobelin.Y()`). ⚠️ Pas encore confirmé en jeu à ce stade (structure lue depuis un event construit par Arnaud dans l'éditeur, mais X/Y n'étaient pas encore renseignés au moment de la lecture) |
 | Changer la position X d'un objet (action) | `SetX` | Paramètres `[NomObjet, opérateur ("+","-","="), expression]` — même schéma que `ModVarGlobal`/`ModVarObjet` (opérateur au milieu). Structure lue depuis un exemple créé par Arnaud dans l'éditeur. ⚠️ `SetY` supposé exister en miroir (vu listé juste à côté dans le menu "Position X"/"Position Y") mais pas encore testé en jeu à ce stade |
 | Fonctions trigonométriques dans une expression | `sin(...)`, `cos(...)` | ⚠️ Pas encore testées en jeu — hypothèse par extension de la convention minuscule déjà confirmée pour `round(...)` |
-| Racine carrée dans une expression | `sqrt(...)` | ⚠️ Pas encore testée en jeu — même hypothèse de convention minuscule |
+| Racine carrée dans une expression | `sqrt(...)` | Confirmée en jeu (utilisée pour la fuite en bloc des Villageois) — même convention minuscule que `round`/`sin`/`cos` |
 | Arrondir un nombre dans une expression | `round(...)` | **Minuscules**, contrairement à `ToString`/`GlobalVariable`/`MouseX` (PascalCase). Les fonctions mathématiques d'expression (`round`, `floor`, `ceil`, `abs`, `sqrt`...) suivent la convention minuscule héritée des bibliothèques mathématiques, pas la convention PascalCase du reste du moteur — a fait ressortir un bloc rouge une première fois avec `Round(...)` |
+
+| Créer plusieurs instances puis les configurer ensemble | Plusieurs `Create` du même objet à la suite, puis une action (`ModVarObjet`...) sur ce même objet, dans le même event | **Confirmée en jeu** (vague 2 de Villageois, 7 `Create` puis un seul `ModVarObjet GroupeID=2` appliqué aux 7) — les instances créées s'accumulent bien dans la liste "picked" de l'event, l'action suivante s'applique à toutes, pas seulement la dernière |
+| Lire la variable d'un objet dans une expression (texte, calcul) | `NomObjet.Variable(NomVariable)` | Déjà utilisé et confirmé (vibration Gobelin/Villageois, affichage PV Necro) — différent de `VarObjet` (condition) / `ModVarObjet` (action) qui eux servent en conditions/actions, pas dans une expression |
 
 **Réflexe si un nom n'est pas dans cette liste** : proposer la meilleure hypothèse, prévenir explicitement Arnaud que ce n'est pas vérifié, et lui demander de signaler precisément quel bloc ressort rouge après rechargement dans l'éditeur — jamais réessayer une 2e fois à l'aveugle sans nouvelle information (comparer le texte affiché par l'éditeur avant de re-deviner, ou laisser Arnaud sélectionner l'action directement dans le moteur de recherche de l'éditeur si 2 tentatives ont échoué).
 
