@@ -81,6 +81,14 @@
         "userAdded": true
       },
       {
+        "file": "assets/villageois_placeholder.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "villageois_placeholder.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
         "file": "assets/decor_placeholder.png",
         "kind": "image",
         "metadata": "",
@@ -120,6 +128,81 @@
       "name": "CooldownGobelinDuree",
       "type": "number",
       "value": 2
+    },
+    {
+      "name": "CibleActive",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "DegatsGobelin",
+      "type": "number",
+      "value": 5
+    },
+    {
+      "name": "CooldownAttaqueGobelinDuree",
+      "type": "number",
+      "value": 1
+    },
+    {
+      "name": "GroupeCible",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "NbCiblesGroupe",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "DegatsVillageois",
+      "type": "number",
+      "value": 2
+    },
+    {
+      "name": "CooldownAttaqueVillageoisDuree",
+      "type": "number",
+      "value": 1.5
+    },
+    {
+      "name": "Groupe1Aggro",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "Groupe2Aggro",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "Groupe1FuiteDX",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "Groupe1FuiteDY",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "Groupe2FuiteDX",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "Groupe2FuiteDY",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "Groupe1Combat",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "Groupe2Combat",
+      "type": "number",
+      "value": 0
     }
   ],
   "layouts": [
@@ -167,6 +250,261 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Villageois",
+          "persistentUuid": "b1a1f8b0-6e1b-4c1a-9c1e-2a1b3c4d5e6f",
+          "width": 0,
+          "x": 1050,
+          "y": 450,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Villageois",
+          "persistentUuid": "c2b2f9c1-7f2c-4d2b-8d2f-3b2c4d5e6f7a",
+          "width": 0,
+          "x": 1085,
+          "y": 470,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Villageois",
+          "persistentUuid": "d3c3fac2-8f3d-4e3c-9e3f-4c3d5e6f7a8b",
+          "width": 0,
+          "x": 1050,
+          "y": 495,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Villageois",
+          "persistentUuid": "1a2b3c4d-0001-4e5f-8a9b-6c7d8e9f0a01",
+          "width": 0,
+          "x": 650,
+          "y": 600,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "GroupeID",
+              "type": "number",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Villageois",
+          "persistentUuid": "1a2b3c4d-0002-4e5f-8a9b-6c7d8e9f0a02",
+          "width": 0,
+          "x": 690,
+          "y": 600,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "GroupeID",
+              "type": "number",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Villageois",
+          "persistentUuid": "1a2b3c4d-0003-4e5f-8a9b-6c7d8e9f0a03",
+          "width": 0,
+          "x": 730,
+          "y": 600,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "GroupeID",
+              "type": "number",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Villageois",
+          "persistentUuid": "1a2b3c4d-0004-4e5f-8a9b-6c7d8e9f0a04",
+          "width": 0,
+          "x": 770,
+          "y": 600,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "GroupeID",
+              "type": "number",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Villageois",
+          "persistentUuid": "1a2b3c4d-0005-4e5f-8a9b-6c7d8e9f0a05",
+          "width": 0,
+          "x": 650,
+          "y": 640,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "GroupeID",
+              "type": "number",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Villageois",
+          "persistentUuid": "1a2b3c4d-0006-4e5f-8a9b-6c7d8e9f0a06",
+          "width": 0,
+          "x": 690,
+          "y": 640,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "GroupeID",
+              "type": "number",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Villageois",
+          "persistentUuid": "1a2b3c4d-0007-4e5f-8a9b-6c7d8e9f0a07",
+          "width": 0,
+          "x": 730,
+          "y": 640,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "GroupeID",
+              "type": "number",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Villageois",
+          "persistentUuid": "1a2b3c4d-0008-4e5f-8a9b-6c7d8e9f0a08",
+          "width": 0,
+          "x": 770,
+          "y": 640,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "GroupeID",
+              "type": "number",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Villageois",
+          "persistentUuid": "1a2b3c4d-0009-4e5f-8a9b-6c7d8e9f0a09",
+          "width": 0,
+          "x": 670,
+          "y": 680,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "GroupeID",
+              "type": "number",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Villageois",
+          "persistentUuid": "1a2b3c4d-0010-4e5f-8a9b-6c7d8e9f0a10",
+          "width": 0,
+          "x": 710,
+          "y": 680,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "GroupeID",
+              "type": "number",
+              "value": 2
+            }
+          ]
         },
         {
           "angle": 0,
@@ -302,6 +640,21 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Debug",
+          "name": "TxtCooldown",
+          "persistentUuid": "e4d4fbd3-9f4e-4f4d-af4f-5d4e6f7a8b9c",
+          "width": 0,
+          "x": 20,
+          "y": 50,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -309,6 +662,7 @@
           "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "Necromancien",
+          "persistentUuid": "18240ee1-2253-44c3-9188-931484a7863f",
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [],
@@ -370,7 +724,43 @@
           "name": "Gobelin",
           "type": "Sprite",
           "updateIfNotVisible": false,
-          "variables": [],
+          "variables": [
+            {
+              "name": "PV",
+              "type": "number",
+              "value": 15
+            },
+            {
+              "name": "Bloque",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "CooldownAttaque",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "EnCombat",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "AncrageX",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "AncrageY",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "TempsVibration",
+              "type": "number",
+              "value": 0
+            }
+          ],
           "effects": [],
           "behaviors": [],
           "animations": [
@@ -385,6 +775,103 @@
                     {
                       "hasCustomCollisionMask": false,
                       "image": "gobelin_placeholder.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 16,
+                        "y": 16
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": false,
+          "assetStoreId": "",
+          "name": "Villageois",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [
+            {
+              "name": "Ciblé",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "PV",
+              "type": "number",
+              "value": 10
+            },
+            {
+              "name": "GroupeID",
+              "type": "number",
+              "value": 1
+            },
+            {
+              "name": "CooldownAttaque",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "EnCombat",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "AncrageX",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "AncrageY",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "TempsVibration",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Aggro",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "IconAggroCree",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "GroupeAuCombat",
+              "type": "number",
+              "value": 0
+            }
+          ],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "Idle",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 1,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "villageois_placeholder.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -488,310 +975,2749 @@
             "lineHeight": 0,
             "color": "255;255;255"
           }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "TxtCooldown",
+          "smoothed": false,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Cooldown: 0s",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 24,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": false,
+            "underlined": false,
+            "text": "Cooldown: 0s",
+            "font": "",
+            "textAlignment": "left",
+            "verticalTextAlignment": "top",
+            "characterSize": 24,
+            "lineHeight": 0,
+            "color": "255;255;255"
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": true,
+          "italic": false,
+          "name": "TxtDegats",
+          "smoothed": false,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [
+            {
+              "name": "DureeVie",
+              "type": "number",
+              "value": 0.6
+            }
+          ],
+          "effects": [],
+          "behaviors": [],
+          "string": "0",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 20,
+          "color": {
+            "b": 60,
+            "g": 60,
+            "r": 255
+          },
+          "content": {
+            "bold": true,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": false,
+            "underlined": false,
+            "text": "0",
+            "font": "",
+            "textAlignment": "left",
+            "verticalTextAlignment": "top",
+            "characterSize": 20,
+            "lineHeight": 0,
+            "color": "255;60;60"
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": true,
+          "italic": false,
+          "name": "TxtAggro",
+          "smoothed": false,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [
+            {
+              "name": "DureeVie",
+              "type": "number",
+              "value": 0.8
+            }
+          ],
+          "effects": [],
+          "behaviors": [],
+          "string": "!",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 28,
+          "color": {
+            "b": 20,
+            "g": 200,
+            "r": 255
+          },
+          "content": {
+            "bold": true,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": false,
+            "underlined": false,
+            "text": "!",
+            "font": "",
+            "textAlignment": "left",
+            "verticalTextAlignment": "top",
+            "characterSize": 28,
+            "lineHeight": 0,
+            "color": "255;200;20"
+          }
         }
       ],
       "objectsFolderStructure": {
         "folderName": "__ROOT",
         "children": [
           {
-            "objectName": "Necromancien"
+            "folderName": "Personnages",
+            "children": [
+              {
+                "objectName": "Necromancien"
+              }
+            ]
           },
           {
-            "objectName": "Gobelin"
+            "folderName": "Invocations",
+            "children": [
+              {
+                "objectName": "Gobelin"
+              }
+            ]
           },
           {
-            "objectName": "RepereDecor"
+            "folderName": "Ennemis",
+            "children": [
+              {
+                "objectName": "Villageois"
+              }
+            ]
           },
           {
-            "objectName": "TxtMana"
+            "folderName": "Décor",
+            "children": [
+              {
+                "objectName": "RepereDecor"
+              }
+            ]
+          },
+          {
+            "folderName": "UI",
+            "children": [
+              {
+                "objectName": "TxtMana"
+              },
+              {
+                "objectName": "TxtCooldown"
+              }
+            ]
+          },
+          {
+            "folderName": "Effets",
+            "children": [
+              {
+                "objectName": "TxtDegats"
+              },
+              {
+                "objectName": "TxtAggro"
+              }
+            ]
           }
         ]
       },
       "events": [
         {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Caméra",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
             {
-              "type": {
-                "value": "CenterCameraOnObject"
-              },
-              "parameters": [
-                "",
-                "Necromancien",
-                "",
-                "",
-                ""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "KeyPressed"
-              },
-              "parameters": [
-                "",
-                "z"
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "CenterCameraOnObject"
+                  },
+                  "parameters": [
+                    "",
+                    "Necromancien",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
               ]
             }
           ],
-          "actions": [
-            {
-              "type": {
-                "value": "TopDownMovementBehavior::SimulateUpKey"
-              },
-              "parameters": [
-                "Necromancien",
-                "Deplacement"
-              ]
-            }
-          ]
+          "parameters": []
         },
         {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Déplacement Nécromancien",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
             {
-              "type": {
-                "value": "KeyPressed"
-              },
-              "parameters": [
-                "",
-                "s"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "TopDownMovementBehavior::SimulateDownKey"
-              },
-              "parameters": [
-                "Necromancien",
-                "Deplacement"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "KeyPressed"
-              },
-              "parameters": [
-                "",
-                "q"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "TopDownMovementBehavior::SimulateLeftKey"
-              },
-              "parameters": [
-                "Necromancien",
-                "Deplacement"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "KeyPressed"
-              },
-              "parameters": [
-                "",
-                "d"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "TopDownMovementBehavior::SimulateRightKey"
-              },
-              "parameters": [
-                "Necromancien",
-                "Deplacement"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "VarGlobal"
-              },
-              "parameters": [
-                "CooldownGobelin",
-                ">",
-                "0"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "ModVarGlobal"
-              },
-              "parameters": [
-                "CooldownGobelin",
-                "-",
-                "TimeDelta()"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "MouseButtonPressed"
-              },
-              "parameters": [
-                "",
-                "Left"
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "KeyPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "z"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TopDownMovementBehavior::SimulateUpKey"
+                  },
+                  "parameters": [
+                    "Necromancien",
+                    "Deplacement"
+                  ]
+                }
               ]
             },
             {
-              "type": {
-                "value": "VarGlobal"
-              },
-              "parameters": [
-                "Mana",
-                ">=",
-                "GlobalVariable(CoutGobelin)"
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "KeyPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "s"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TopDownMovementBehavior::SimulateDownKey"
+                  },
+                  "parameters": [
+                    "Necromancien",
+                    "Deplacement"
+                  ]
+                }
               ]
             },
             {
-              "type": {
-                "value": "VarGlobal"
-              },
-              "parameters": [
-                "CooldownGobelin",
-                "<=",
-                "0"
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "KeyPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "q"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TopDownMovementBehavior::SimulateLeftKey"
+                  },
+                  "parameters": [
+                    "Necromancien",
+                    "Deplacement"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "KeyPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "d"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TopDownMovementBehavior::SimulateRightKey"
+                  },
+                  "parameters": [
+                    "Necromancien",
+                    "Deplacement"
+                  ]
+                }
               ]
             }
           ],
-          "actions": [
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Régénération Mana",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
             {
-              "type": {
-                "value": "Create"
-              },
-              "parameters": [
-                "",
-                "Gobelin",
-                "MouseX()",
-                "MouseY()",
-                ""
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarGlobal"
+                  },
+                  "parameters": [
+                    "Mana",
+                    "<",
+                    "GlobalVariable(ManaMax)"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "Mana",
+                    "+",
+                    "5*TimeDelta()"
+                  ]
+                }
               ]
             },
             {
-              "type": {
-                "value": "ModVarGlobal"
-              },
-              "parameters": [
-                "Mana",
-                "-",
-                "GlobalVariable(CoutGobelin)"
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarGlobal"
+                  },
+                  "parameters": [
+                    "Mana",
+                    ">",
+                    "GlobalVariable(ManaMax)"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "Mana",
+                    "=",
+                    "GlobalVariable(ManaMax)"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Invocation Gobelin",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarGlobal"
+                  },
+                  "parameters": [
+                    "CooldownGobelin",
+                    ">",
+                    "0"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "CooldownGobelin",
+                    "-",
+                    "TimeDelta()"
+                  ]
+                }
               ]
             },
             {
-              "type": {
-                "value": "ModVarGlobal"
-              },
-              "parameters": [
-                "CooldownGobelin",
-                "=",
-                "GlobalVariable(CooldownGobelinDuree)"
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "MouseButtonPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "Left"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "VarGlobal"
+                  },
+                  "parameters": [
+                    "Mana",
+                    ">=",
+                    "GlobalVariable(CoutGobelin)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "VarGlobal"
+                  },
+                  "parameters": [
+                    "CooldownGobelin",
+                    "<=",
+                    "0"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "Gobelin",
+                    "MouseX()",
+                    "MouseY()",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "Mana",
+                    "-",
+                    "GlobalVariable(CoutGobelin)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "CooldownGobelin",
+                    "=",
+                    "GlobalVariable(CooldownGobelinDuree)"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Ordre d'attaque",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "MouseButtonPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "Right"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Villageois",
+                    "Ciblé",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "CibleActive",
+                    "=",
+                    "0"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "MouseButtonPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "Right"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SourisSurObjet"
+                  },
+                  "parameters": [
+                    "Villageois",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "GroupeCible",
+                    "=",
+                    "Villageois.Variable(GroupeID)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "CibleActive",
+                    "=",
+                    "1"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarGlobal"
+                  },
+                  "parameters": [
+                    "CibleActive",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "Villageois",
+                    "GroupeID",
+                    "=",
+                    "GlobalVariable(GroupeCible)"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Villageois",
+                    "Ciblé",
+                    "=",
+                    "1"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::ForEach",
+              "object": "Gobelin",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarGlobal"
+                  },
+                  "parameters": [
+                    "CibleActive",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "Villageois",
+                    "Ciblé",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PickNearest"
+                  },
+                  "parameters": [
+                    "Villageois",
+                    "Gobelin.X()",
+                    "Gobelin.Y()",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "Distance"
+                  },
+                  "parameters": [
+                    "Gobelin",
+                    "Villageois",
+                    "40"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AddForceTowardObject"
+                  },
+                  "parameters": [
+                    "Gobelin",
+                    "Villageois",
+                    "250",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Combat Gobelin",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "Gobelin",
+                    "CooldownAttaque",
+                    ">",
+                    "0"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Gobelin",
+                    "CooldownAttaque",
+                    "-",
+                    "TimeDelta()"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::ForEach",
+              "object": "Gobelin",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "Villageois",
+                    "Ciblé",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PickNearest"
+                  },
+                  "parameters": [
+                    "Villageois",
+                    "Gobelin.X()",
+                    "Gobelin.Y()",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Distance"
+                  },
+                  "parameters": [
+                    "Gobelin",
+                    "Villageois",
+                    "40"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "Gobelin",
+                    "CooldownAttaque",
+                    "<=",
+                    "0"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Villageois",
+                    "PV",
+                    "-",
+                    "GlobalVariable(DegatsGobelin)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Villageois",
+                    "GroupeAuCombat",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Gobelin",
+                    "CooldownAttaque",
+                    "=",
+                    "GlobalVariable(CooldownAttaqueGobelinDuree)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "TxtDegats",
+                    "Villageois.X()",
+                    "Villageois.Y()-40",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "TxtDegats",
+                    "=",
+                    "\"-\"+ToString(GlobalVariable(DegatsGobelin))"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "Villageois",
+                    "PV",
+                    "<=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Distance"
+                  },
+                  "parameters": [
+                    "Villageois",
+                    "TxtDegats",
+                    "60"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "TxtDegats",
+                    "TxtDegats"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "Villageois",
+                    "PV",
+                    "<=",
+                    "0"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "Villageois",
+                    "Villageois"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "NbCiblesGroupe",
+                    "=",
+                    "0"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "Villageois",
+                    "Ciblé",
+                    "=",
+                    "1"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "NbCiblesGroupe",
+                    "+",
+                    "1"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarGlobal"
+                  },
+                  "parameters": [
+                    "CibleActive",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "VarGlobal"
+                  },
+                  "parameters": [
+                    "NbCiblesGroupe",
+                    "=",
+                    "0"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "CibleActive",
+                    "=",
+                    "0"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "TxtDegats",
+                    "DureeVie",
+                    ">",
+                    "0"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "TxtDegats",
+                    "DureeVie",
+                    "-",
+                    "TimeDelta()"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "TxtDegats",
+                    "DureeVie",
+                    "<=",
+                    "0"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "TxtDegats",
+                    "TxtDegats"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Combat Villageois",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "parameters": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "Villageois",
+                    "GroupeID",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "Villageois",
+                    "GroupeAuCombat",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "VarGlobal"
+                  },
+                  "parameters": [
+                    "Groupe1Combat",
+                    "=",
+                    "0"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "Groupe1Combat",
+                    "=",
+                    "1"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "Villageois",
+                    "GroupeID",
+                    "=",
+                    "2"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "Villageois",
+                    "GroupeAuCombat",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "VarGlobal"
+                  },
+                  "parameters": [
+                    "Groupe2Combat",
+                    "=",
+                    "0"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "Groupe2Combat",
+                    "=",
+                    "1"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarGlobal"
+                  },
+                  "parameters": [
+                    "Groupe1Combat",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "Villageois",
+                    "GroupeID",
+                    "=",
+                    "1"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Villageois",
+                    "GroupeAuCombat",
+                    "=",
+                    "1"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarGlobal"
+                  },
+                  "parameters": [
+                    "Groupe2Combat",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "Villageois",
+                    "GroupeID",
+                    "=",
+                    "2"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Villageois",
+                    "GroupeAuCombat",
+                    "=",
+                    "1"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::ForEach",
+              "object": "Villageois",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "Villageois",
+                    "GroupeAuCombat",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PickNearest"
+                  },
+                  "parameters": [
+                    "Gobelin",
+                    "Villageois.X()",
+                    "Villageois.Y()",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "Distance"
+                  },
+                  "parameters": [
+                    "Villageois",
+                    "Gobelin",
+                    "40"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AddForceTowardObject"
+                  },
+                  "parameters": [
+                    "Villageois",
+                    "Gobelin",
+                    "100",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "Villageois",
+                    "CooldownAttaque",
+                    ">",
+                    "0"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Villageois",
+                    "CooldownAttaque",
+                    "-",
+                    "TimeDelta()"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::ForEach",
+              "object": "Villageois",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "Villageois",
+                    "GroupeAuCombat",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PickNearest"
+                  },
+                  "parameters": [
+                    "Gobelin",
+                    "Villageois.X()",
+                    "Villageois.Y()",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Distance"
+                  },
+                  "parameters": [
+                    "Villageois",
+                    "Gobelin",
+                    "40"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "Villageois",
+                    "CooldownAttaque",
+                    "<=",
+                    "0"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Gobelin",
+                    "PV",
+                    "-",
+                    "GlobalVariable(DegatsVillageois)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Villageois",
+                    "CooldownAttaque",
+                    "=",
+                    "GlobalVariable(CooldownAttaqueVillageoisDuree)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "TxtDegats",
+                    "Gobelin.X()",
+                    "Gobelin.Y()-40",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "TxtDegats",
+                    "=",
+                    "\"-\"+ToString(GlobalVariable(DegatsVillageois))"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "Gobelin",
+                    "PV",
+                    "<=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Distance"
+                  },
+                  "parameters": [
+                    "Gobelin",
+                    "TxtDegats",
+                    "60"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "TxtDegats",
+                    "TxtDegats"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "Gobelin",
+                    "PV",
+                    "<=",
+                    "0"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "Gobelin",
+                    "Gobelin"
+                  ]
+                }
               ]
             }
           ]
         },
         {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Vibration Gobelin",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "parameters": [],
+          "events": [
             {
-              "type": {
-                "value": "TextObject::String"
-              },
-              "parameters": [
-                "TxtMana",
-                "=",
-                "\"Mana: \"+ToString(GlobalVariable(Mana))+\" / \"+ToString(GlobalVariable(ManaMax))"
+              "type": "BuiltinCommonInstructions::ForEach",
+              "object": "Gobelin",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarGlobal"
+                  },
+                  "parameters": [
+                    "CibleActive",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "Villageois",
+                    "Ciblé",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PickNearest"
+                  },
+                  "parameters": [
+                    "Villageois",
+                    "Gobelin.X()",
+                    "Gobelin.Y()",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Distance"
+                  },
+                  "parameters": [
+                    "Gobelin",
+                    "Villageois",
+                    "40"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "Gobelin",
+                    "EnCombat",
+                    "=",
+                    "0"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Gobelin",
+                    "EnCombat",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Gobelin",
+                    "AncrageX",
+                    "=",
+                    "Gobelin.X()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Gobelin",
+                    "AncrageY",
+                    "=",
+                    "Gobelin.Y()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Gobelin",
+                    "TempsVibration",
+                    "=",
+                    "0"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "Gobelin",
+                    "EnCombat",
+                    "=",
+                    "1"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Gobelin",
+                    "TempsVibration",
+                    "+",
+                    "TimeDelta()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetX"
+                  },
+                  "parameters": [
+                    "Gobelin",
+                    "=",
+                    "Gobelin.Variable(AncrageX)+3*sin(Gobelin.Variable(TempsVibration)*20)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetY"
+                  },
+                  "parameters": [
+                    "Gobelin",
+                    "=",
+                    "Gobelin.Variable(AncrageY)+2*cos(Gobelin.Variable(TempsVibration)*20)"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::ForEach",
+              "object": "Gobelin",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "Gobelin",
+                    "EnCombat",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "Villageois",
+                    "Ciblé",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PickNearest"
+                  },
+                  "parameters": [
+                    "Villageois",
+                    "Gobelin.X()",
+                    "Gobelin.Y()",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "Distance"
+                  },
+                  "parameters": [
+                    "Gobelin",
+                    "Villageois",
+                    "40"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Gobelin",
+                    "EnCombat",
+                    "=",
+                    "0"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarGlobal"
+                  },
+                  "parameters": [
+                    "CibleActive",
+                    "=",
+                    "0"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Gobelin",
+                    "EnCombat",
+                    "=",
+                    "0"
+                  ]
+                }
               ]
             }
           ]
         },
         {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Vibration Villageois",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "parameters": [],
+          "events": [
             {
-              "type": {
-                "inverted": true,
-                "value": "Distance"
-              },
-              "parameters": [
-                "Gobelin",
-                "Necromancien",
-                "50"
+              "type": "BuiltinCommonInstructions::ForEach",
+              "object": "Villageois",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "Villageois",
+                    "Ciblé",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PickNearest"
+                  },
+                  "parameters": [
+                    "Gobelin",
+                    "Villageois.X()",
+                    "Villageois.Y()",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Distance"
+                  },
+                  "parameters": [
+                    "Villageois",
+                    "Gobelin",
+                    "40"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "Villageois",
+                    "EnCombat",
+                    "=",
+                    "0"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Villageois",
+                    "EnCombat",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Villageois",
+                    "AncrageX",
+                    "=",
+                    "Villageois.X()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Villageois",
+                    "AncrageY",
+                    "=",
+                    "Villageois.Y()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Villageois",
+                    "TempsVibration",
+                    "=",
+                    "0"
+                  ]
+                }
               ]
-            }
-          ],
-          "actions": [
+            },
             {
-              "type": {
-                "value": "AddForceTowardObject"
-              },
-              "parameters": [
-                "Gobelin",
-                "Necromancien",
-                "250",
-                ""
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "Villageois",
+                    "EnCombat",
+                    "=",
+                    "1"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Villageois",
+                    "TempsVibration",
+                    "+",
+                    "TimeDelta()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetX"
+                  },
+                  "parameters": [
+                    "Villageois",
+                    "=",
+                    "Villageois.Variable(AncrageX)+3*sin(Villageois.Variable(TempsVibration)*20)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetY"
+                  },
+                  "parameters": [
+                    "Villageois",
+                    "=",
+                    "Villageois.Variable(AncrageY)+2*cos(Villageois.Variable(TempsVibration)*20)"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::ForEach",
+              "object": "Villageois",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "Villageois",
+                    "EnCombat",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PickNearest"
+                  },
+                  "parameters": [
+                    "Gobelin",
+                    "Villageois.X()",
+                    "Villageois.Y()",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "Distance"
+                  },
+                  "parameters": [
+                    "Villageois",
+                    "Gobelin",
+                    "40"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Villageois",
+                    "EnCombat",
+                    "=",
+                    "0"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "Villageois",
+                    "Ciblé",
+                    "=",
+                    "0"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Villageois",
+                    "EnCombat",
+                    "=",
+                    "0"
+                  ]
+                }
               ]
             }
           ]
         },
         {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Aggro Villageois",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "parameters": [],
+          "events": [
             {
-              "type": {
-                "value": "Distance"
-              },
-              "parameters": [
-                "Gobelin",
-                "Gobelin",
-                "30"
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Distance"
+                  },
+                  "parameters": [
+                    "Villageois",
+                    "Necromancien",
+                    "150"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Villageois",
+                    "Aggro",
+                    "=",
+                    "1"
+                  ]
+                }
               ]
-            }
-          ],
-          "actions": [
+            },
             {
-              "type": {
-                "value": "SeparateFromObjects"
-              },
-              "parameters": [
-                "Gobelin",
-                "Gobelin",
-                ""
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Distance"
+                  },
+                  "parameters": [
+                    "Villageois",
+                    "Gobelin",
+                    "150"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Villageois",
+                    "Aggro",
+                    "=",
+                    "1"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "Villageois",
+                    "Aggro",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "Villageois",
+                    "IconAggroCree",
+                    "=",
+                    "0"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "TxtAggro",
+                    "Villageois.X()",
+                    "Villageois.Y()-60",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Villageois",
+                    "IconAggroCree",
+                    "=",
+                    "1"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "TxtAggro",
+                    "DureeVie",
+                    ">",
+                    "0"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "TxtAggro",
+                    "DureeVie",
+                    "-",
+                    "TimeDelta()"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "TxtAggro",
+                    "DureeVie",
+                    "<=",
+                    "0"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "TxtAggro",
+                    "TxtAggro"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "Villageois",
+                    "GroupeID",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "Villageois",
+                    "Aggro",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "VarGlobal"
+                  },
+                  "parameters": [
+                    "Groupe1Aggro",
+                    "=",
+                    "0"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "Groupe1Aggro",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "Groupe1FuiteDX",
+                    "=",
+                    "(Villageois.X()-Necromancien.X())/sqrt((Villageois.X()-Necromancien.X())*(Villageois.X()-Necromancien.X())+(Villageois.Y()-Necromancien.Y())*(Villageois.Y()-Necromancien.Y()))"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "Groupe1FuiteDY",
+                    "=",
+                    "(Villageois.Y()-Necromancien.Y())/sqrt((Villageois.X()-Necromancien.X())*(Villageois.X()-Necromancien.X())+(Villageois.Y()-Necromancien.Y())*(Villageois.Y()-Necromancien.Y()))"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "Villageois",
+                    "GroupeID",
+                    "=",
+                    "2"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "Villageois",
+                    "Aggro",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "VarGlobal"
+                  },
+                  "parameters": [
+                    "Groupe2Aggro",
+                    "=",
+                    "0"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "Groupe2Aggro",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "Groupe2FuiteDX",
+                    "=",
+                    "(Villageois.X()-Necromancien.X())/sqrt((Villageois.X()-Necromancien.X())*(Villageois.X()-Necromancien.X())+(Villageois.Y()-Necromancien.Y())*(Villageois.Y()-Necromancien.Y()))"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "Groupe2FuiteDY",
+                    "=",
+                    "(Villageois.Y()-Necromancien.Y())/sqrt((Villageois.X()-Necromancien.X())*(Villageois.X()-Necromancien.X())+(Villageois.Y()-Necromancien.Y())*(Villageois.Y()-Necromancien.Y()))"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarGlobal"
+                  },
+                  "parameters": [
+                    "Groupe1Aggro",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "Villageois",
+                    "GroupeID",
+                    "=",
+                    "1"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Villageois",
+                    "Aggro",
+                    "=",
+                    "1"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarGlobal"
+                  },
+                  "parameters": [
+                    "Groupe2Aggro",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "Villageois",
+                    "GroupeID",
+                    "=",
+                    "2"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Villageois",
+                    "Aggro",
+                    "=",
+                    "1"
+                  ]
+                }
               ]
             }
           ]
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Fuite Villageois",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "parameters": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "Villageois",
+                    "GroupeID",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "Villageois",
+                    "Aggro",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "Villageois",
+                    "GroupeAuCombat",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Distance"
+                  },
+                  "parameters": [
+                    "Villageois",
+                    "Necromancien",
+                    "300"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetX"
+                  },
+                  "parameters": [
+                    "Villageois",
+                    "+",
+                    "GlobalVariable(Groupe1FuiteDX)*100*TimeDelta()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetY"
+                  },
+                  "parameters": [
+                    "Villageois",
+                    "+",
+                    "GlobalVariable(Groupe1FuiteDY)*100*TimeDelta()"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "Villageois",
+                    "GroupeID",
+                    "=",
+                    "2"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "Villageois",
+                    "Aggro",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "Villageois",
+                    "GroupeAuCombat",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Distance"
+                  },
+                  "parameters": [
+                    "Villageois",
+                    "Necromancien",
+                    "300"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetX"
+                  },
+                  "parameters": [
+                    "Villageois",
+                    "+",
+                    "GlobalVariable(Groupe2FuiteDX)*100*TimeDelta()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetY"
+                  },
+                  "parameters": [
+                    "Villageois",
+                    "+",
+                    "GlobalVariable(Groupe2FuiteDY)*100*TimeDelta()"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Debug/HUD",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "TxtMana",
+                    "=",
+                    "\"Mana: \"+ToString(round(GlobalVariable(Mana)))+\" / \"+ToString(GlobalVariable(ManaMax))"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "TxtCooldown",
+                    "=",
+                    "\"Cooldown: \"+ToString(round(GlobalVariable(CooldownGobelin)*10)/10)+\"s\""
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "IA Gobelin",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Gobelin",
+                    "Bloque",
+                    "=",
+                    "0"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Distance"
+                  },
+                  "parameters": [
+                    "Gobelin",
+                    "Gobelin",
+                    "35"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Distance"
+                  },
+                  "parameters": [
+                    "Gobelin",
+                    "Necromancien",
+                    "120"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Gobelin",
+                    "Bloque",
+                    "=",
+                    "1"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "Distance"
+                  },
+                  "parameters": [
+                    "Gobelin",
+                    "Necromancien",
+                    "65"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "VarGlobal"
+                  },
+                  "parameters": [
+                    "CibleActive",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "Gobelin",
+                    "Bloque",
+                    "=",
+                    "0"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AddForceTowardObject"
+                  },
+                  "parameters": [
+                    "Gobelin",
+                    "Necromancien",
+                    "250",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Distance"
+                  },
+                  "parameters": [
+                    "Gobelin",
+                    "Gobelin",
+                    "30"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SeparateFromObjects"
+                  },
+                  "parameters": [
+                    "Gobelin",
+                    "Gobelin",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Distance"
+                  },
+                  "parameters": [
+                    "Gobelin",
+                    "Necromancien",
+                    "55"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SeparateFromObjects"
+                  },
+                  "parameters": [
+                    "Gobelin",
+                    "Necromancien",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
         }
       ],
       "layers": [
