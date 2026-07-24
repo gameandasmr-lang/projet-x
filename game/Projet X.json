@@ -137,18 +137,18 @@
         "userAdded": true
       },
       {
-        "file": "assets/maison_colombage_v2.png",
+        "file": "assets/maison_colombage_v3.png",
         "kind": "image",
         "metadata": "",
-        "name": "maison_colombage_v2.png",
+        "name": "maison_colombage_v3.png",
         "smoothed": false,
         "userAdded": true
       },
       {
-        "file": "assets/maison_beige_fleurs_v2.png",
+        "file": "assets/maison_beige_fleurs_v4.png",
         "kind": "image",
         "metadata": "",
-        "name": "maison_beige_fleurs_v2.png",
+        "name": "maison_beige_fleurs_v4.png",
         "smoothed": false,
         "userAdded": true
       },
@@ -1376,7 +1376,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "maison_colombage_v2.png",
+                      "image": "maison_colombage_v3.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -1417,7 +1417,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "maison_beige_fleurs_v2.png",
+                      "image": "maison_beige_fleurs_v4.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
